@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: PW-{DD}-{MM}-{YY}-{####}",
+ "creation": "2025-03-14 17:36:36.436213",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nvmx",
+  "subject",
+  "date",
+  "attachment_document",
+  "amended_from",
+  "column_break_sril",
+  "amount",
+  "currency",
+  "date_from",
+  "date_to",
+  "procurement_status",
+  "date_confirm",
+  "departmental_details_section",
+  "department",
+  "branch_location",
+  "column_break_sbab",
+  "expenditure_levels",
+  "products_tab",
+  "products",
+  "approvers_tab",
+  "approvers_section",
+  "approvers"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nvmx",
+   "fieldtype": "Section Break",
+   "label": "Proposal Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Proposal Writing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "products_tab",
+   "fieldtype": "Tab Break",
+   "label": "Products"
+  },
+  {
+   "fieldname": "approvers_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approver(s)"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sril",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "description": "Supporting document",
+   "fieldname": "attachment_document",
+   "fieldtype": "Attach",
+   "label": "Attachment",
+   "no_copy": 1,
+   "options": ".pdf"
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "To",
+   "reqd": 1
+  },
+  {
+   "default": "Pending",
+   "description": "This is the status if procuremnet has process your request.",
+   "fieldname": "procurement_status",
+   "fieldtype": "Select",
+   "label": "Procurement Status",
+   "options": "Pending\nIn Progress\nCompleted"
+  },
+  {
+   "description": "The date which the proposal document was submitted",
+   "fieldname": "date_confirm",
+   "fieldtype": "Date",
+   "label": "Date Confirm",
+   "read_only": 1
+  },
+  {
+   "fieldname": "departmental_details_section",
+   "fieldtype": "Section Break",
+   "label": "Departmental Details"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch_location",
+   "fieldtype": "Link",
+   "label": "Branch Location",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sbab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expenditure_levels",
+   "fieldtype": "Link",
+   "label": "Expenditure Levels",
+   "options": "Expendicture Level",
+   "reqd": 1
+  },
+  {
+   "fieldname": "products",
+   "fieldtype": "Table",
+   "label": "Products",
+   "options": "Proposal Product"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "columns": 3,
+   "fieldname": "approvers",
+   "fieldtype": "Table",
+   "label": "Approver(s)",
+   "options": "Approver",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approvers_section",
+   "fieldtype": "Section Break",
+   "label": "Approvers Section"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-17 12:26:25.155196",
+ "modified_by": "Administrator",
+ "module": "Approvals",
+ "name": "Proposal Writing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_seen": 1
+}

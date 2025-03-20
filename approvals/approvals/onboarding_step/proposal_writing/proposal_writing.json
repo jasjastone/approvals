@@ -1,0 +1,18 @@
+{
+ "action": "Create Entry",
+ "creation": "2025-03-15 04:47:49.341774",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-03-15 04:47:49.341774",
+ "modified_by": "Administrator",
+ "name": "Proposal Writing",
+ "owner": "Administrator",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Proposal Writing",
+ "validate_action": 1
+}

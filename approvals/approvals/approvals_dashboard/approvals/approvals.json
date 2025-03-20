@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Proposal Awaiting Your Approval",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-03-17 11:50:01.976275",
+ "dashboard_name": "Approvals",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-03-17 11:52:13.019731",
+ "modified_by": "Administrator",
+ "module": "Approvals",
+ "name": "Approvals",
+ "owner": "Administrator"
+}
