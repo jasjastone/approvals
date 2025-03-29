@@ -6,5 +6,5 @@ from frappe.model.document import Document
 
 
 class ProposalWriting(Document):
-	def approve(self):
-		self.show_alert("Ok")
+	def before_submit(self):
+		self.custom_status = "Submitted"

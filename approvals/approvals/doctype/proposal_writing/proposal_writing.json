@@ -24,7 +24,7 @@
   "column_break_sbab",
   "expenditure_levels",
   "products_tab",
-  "products",
+  "items",
   "approvers_tab",
   "approvers_section",
   "approvers"
@@ -151,13 +151,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "products",
-   "fieldtype": "Table",
-   "label": "Products",
-   "options": "Proposal Product"
-  },
-  {
-   "allow_in_quick_entry": 1,
    "columns": 3,
    "fieldname": "approvers",
    "fieldtype": "Table",
@@ -169,13 +162,19 @@
    "fieldname": "approvers_section",
    "fieldtype": "Section Break",
    "label": "Approvers Section"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Products",
+   "options": "Purchase Order Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-17 12:26:25.155196",
+ "modified": "2025-03-29 19:51:09.344985",
  "modified_by": "Administrator",
  "module": "Approvals",
  "name": "Proposal Writing",

@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Approvals",
  "links": [],
- "modified": "2025-03-15 05:36:49.668023",
+ "modified": "2025-03-21 06:51:53.131759",
  "modified_by": "Administrator",
  "module": "Approvals",
  "name": "Approvals",
@@ -26,18 +26,18 @@
  "sequence_id": 33.0,
  "shortcuts": [
   {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Proposal Writing",
+   "link_to": "Proposal Writing",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
    "color": "Yellow",
    "doc_view": "List",
    "format": "{} needs your Approval",
    "label": "Proposals",
-   "link_to": "Proposal Writing",
-   "stats_filter": "[[\"Proposal Writing\",\"request_owner\",\"=\",\"user\",false],[\"Proposal Writing\",\"name\",\"=\",\"g0v63amar7\",false]]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "New",
-   "label": "Proposal Writing",
    "link_to": "Proposal Writing",
    "stats_filter": "[]",
    "type": "DocType"
