@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"2pI8FDDjAH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Approvals</span>\",\"col\":12}},{\"id\":\"bRMiUCAMet\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Approvals\",\"col\":12}},{\"id\":\"fKVJbag8ms\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Proposal Writing\",\"col\":3}},{\"id\":\"VB9AI4SOet\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Proposals\",\"col\":3}}]",
+ "content": "[{\"id\":\"2pI8FDDjAH\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Approvals</span>\",\"col\":12}},{\"id\":\"bRMiUCAMet\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Approvals\",\"col\":12}},{\"id\":\"fKVJbag8ms\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Proposal Writing\",\"col\":3}}]",
  "creation": "2025-03-14 15:17:04.115274",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,8 +13,8 @@
  "is_hidden": 0,
  "label": "Approvals",
  "links": [],
- "modified": "2025-03-21 06:51:53.131759",
- "modified_by": "Administrator",
+ "modified": "2025-03-31 15:52:43.976777",
+ "modified_by": "it@tmhstz.com",
  "module": "Approvals",
  "name": "Approvals",
  "number_cards": [],
@@ -29,15 +29,6 @@
    "color": "Grey",
    "doc_view": "New",
    "label": "Proposal Writing",
-   "link_to": "Proposal Writing",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Yellow",
-   "doc_view": "List",
-   "format": "{} needs your Approval",
-   "label": "Proposals",
    "link_to": "Proposal Writing",
    "stats_filter": "[]",
    "type": "DocType"

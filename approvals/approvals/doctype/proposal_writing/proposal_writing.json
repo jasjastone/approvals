@@ -9,25 +9,35 @@
   "section_break_nvmx",
   "subject",
   "date",
-  "attachment_document",
-  "amended_from",
+  "date_from",
+  "date_to",
+  "purchase_order",
+  "status",
   "column_break_sril",
   "amount",
   "currency",
-  "date_from",
-  "date_to",
   "procurement_status",
   "date_confirm",
+  "attachment_document",
+  "amended_from",
   "departmental_details_section",
   "department",
   "branch_location",
   "column_break_sbab",
   "expenditure_levels",
   "products_tab",
+  "items_and_services_section",
   "items",
+  "taxes_and_charges_section",
+  "tax",
+  "column_break_lten",
+  "tax_amount",
+  "grand_total",
   "approvers_tab",
   "approvers_section",
-  "approvers"
+  "approvers",
+  "respect_approver_order",
+  "connections_tab"
  ],
  "fields": [
   {
@@ -116,7 +126,7 @@
   {
    "description": "The date which the proposal document was submitted",
    "fieldname": "date_confirm",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Date Confirm",
    "read_only": 1
   },
@@ -154,7 +164,10 @@
    "columns": 3,
    "fieldname": "approvers",
    "fieldtype": "Table",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Approver(s)",
+   "no_copy": 1,
    "options": "Approver",
    "reqd": 1
   },
@@ -167,14 +180,93 @@
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Products",
-   "options": "Purchase Order Item"
+   "options": "Proposal Product"
+  },
+  {
+   "fieldname": "taxes_and_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Taxes and Charges"
+  },
+  {
+   "default": "0",
+   "fieldname": "tax",
+   "fieldtype": "Check",
+   "label": "Add Tax",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lten",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "tax",
+   "fieldname": "tax_amount",
+   "fieldtype": "Currency",
+   "label": "Tax Amount",
+   "mandatory_depends_on": "tax",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "no_copy": 1,
+   "options": "0",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "This will force the approval based on the order of approvers you have arranged, be careful as this will cause others to not be able to approve until the top level have approved kindly use this only necessary ",
+   "fieldname": "respect_approver_order",
+   "fieldtype": "Check",
+   "label": "Respect Approvers Order?"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "no_copy": 1,
+   "options": "Purchase Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "connections_tab",
+   "fieldtype": "Tab Break",
+   "label": "Connections"
+  },
+  {
+   "fieldname": "items_and_services_section",
+   "fieldtype": "Section Break",
+   "label": "Items and Services"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "New\nSubmitted\nPending Approval\nApproved\nRejected",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-03-29 19:51:09.344985",
+ "links": [
+  {
+   "group": "Purchase Order",
+   "link_doctype": "Purchase Order",
+   "link_fieldname": "proposal_reference"
+  }
+ ],
+ "modified": "2025-03-31 15:49:18.011999",
  "modified_by": "Administrator",
  "module": "Approvals",
  "name": "Proposal Writing",
@@ -195,8 +287,12 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
+ "search_fields": "subject",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "subject",
+ "track_changes": 1,
  "track_seen": 1
 }

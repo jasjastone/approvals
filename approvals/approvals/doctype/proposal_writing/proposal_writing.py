@@ -7,4 +7,5 @@ from frappe.model.document import Document
 
 class ProposalWriting(Document):
 	def before_submit(self):
-		self.custom_status = "Submitted"
+		self.status = "Submitted"
+		self.date_confirm = frappe.utils.nowdate()

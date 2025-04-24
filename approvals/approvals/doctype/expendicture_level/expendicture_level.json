@@ -18,9 +18,10 @@
   }
  ],
  "grid_page_length": 50,
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-14 19:10:28.850921",
+ "modified": "2025-03-30 12:23:35.497722",
  "modified_by": "Administrator",
  "module": "Approvals",
  "name": "Expendicture Level",
@@ -39,7 +40,11 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
+ "search_fields": "expendicture",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "expendicture"
 }
